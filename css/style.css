@@ -1,0 +1,83 @@
+
+body {
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/b3/0e/ff/b30eff91d7e98d48c77ab68f2fe6b8d9.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: serif;
+}
+
+/*Guess The Artist*/
+header {
+    vertical-align: middle;
+    text-align: center;
+    margin-top:4%;
+    font-style: normal;
+    font-size: 3.7em;
+    font-weight: bold;
+}
+
+/*Input field*/
+input{
+    margin-left: 32%;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3em;
+    width: 30%;
+    padding: 7px 20px;
+    border: double black;
+    border-radius: 9px;
+}
+
+/*Guess butten*/
+button {
+    background-color: #641a66;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+/*3rd hint - an album's artwork*/
+.artwork{
+    border: 10px double #070707;
+    position: fixed;
+    left: 59%;
+    bottom: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+/*Total score header*/
+h1 {
+    position: fixed;
+    bottom: 40%;
+    right: 38%;
+    font-size: 3.0em;
+    font-style: italic;
+}
+
+/*Game Over & Answer*/
+h2{
+    color: #641a66;
+    font-size: 3.0em;
+    text-align: center;
+    margin-top: 6%;
+}
+
+/*Hints*/
+h4{
+    font-size: 2.1em;
+    margin-left: 23%;
+    margin-top: 2.3%;
+    width: 40%;
+}
+
+/*Current prize for the question*/
+h3{
+    text-align: center;
+}
