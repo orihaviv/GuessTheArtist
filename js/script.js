@@ -12,8 +12,8 @@ var total;
 var attempt;
 var chosenAlbums = [];//led, amy, radio, daft,gorillaz
 var artistsIds = [["994656",2,10],["13125609",3,2],["657515",2,6],["5468295",6,1],["567072",3,4],["494311026",1,2],["889780", 4,19],
-                    ["62852",2,6], ["487143",2,1],["121982",11,1],["909253",3,1],["136975",8,1],["35315",2,3], ["467464",2,3],
-                    ["62820413",3,1],["112018",4,2], ["368183298",2,1]["365673",6,3],["5893059",2,1],["13493906",2,1]];
+                    ["62852",2,6], ["487143",2,1],["121982",11,1],["909253",3,1],["136975",8,1],["35315",2,3],["467464",2,3],
+                    ["62820413",3,1],["112018",4,2],["368183298",2,1],["365673",6,3],["5893059",2,1],["13493906",2,1]];
 // Led Zeppelin, Amy Winehouse, Radiohead ,Daft Punk, Gorillaz, alt-J, Red Hot Chili Peppers,
 // Jimi Hendrix, Pink Floyd, Bob Marley,Jack Johnson, The Beatles, Dr. Dre, Pearl Jam,
 // Arctic Monkeys, Nirvana, Kendrick Lamar, Janis Joplin, The Black Keys, Sia
@@ -62,6 +62,7 @@ function generateChosenAlbums() {
         }
         marked[i] = num;
         chosenAlbums[i] = artistsIds[num];
+        debugger;
     }
 }
 
@@ -144,7 +145,10 @@ function updateTotal() {
 function gameOver() {
     document.getElementsByClassName("board")[0].innerHTML = null;
     document.getElementById("scoreHeader").innerHTML = null;
+    document.getElementById("totalScoreHeader").innerHTML = null;
     tag = "<h2>" +"Game Over" + "</h2>";
+    $(".board").append(tag);
+    tag = "<h2>" +"Your Final Score: "+ total + "</h2>";
     $(".board").append(tag);
 }
 
